@@ -28,6 +28,8 @@ module.exports = {
       Nav: 'app/components/Nav.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
       applicationStyles: 'app/styles/app.less',
+      Timer: 'app/components/Timer.jsx',
+      Countdown: 'app/components/Countdown.jsx',
     },
     extensions: ['', '.js', '.jsx']
   },
