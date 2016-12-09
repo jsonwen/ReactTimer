@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   entry: [
@@ -27,7 +28,7 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       TopNavigation: 'app/components/TopNavigation.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      applicationStyles: 'app/styles/app.less',
+      applicationStyles: 'app/styles/app.scss',
       Timer: 'app/components/Timer.jsx',
       Countdown: 'app/components/Countdown.jsx',
       Clock: 'app/components/Clock.jsx',
@@ -45,12 +46,20 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /\.less$/,
-        loader: "style!css!less"
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/bootstrap/scss')
     ]
   },
   devtool: 'cheap-module-eval-source-map'
 };
+
+/*
+{
+  test: /\.less$/,
+  loader: "style!css!less"
+}
+*/

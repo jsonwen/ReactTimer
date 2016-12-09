@@ -6,8 +6,9 @@ var Timer = require('Timer');
 var Countdown = require('Countdown');
 
 // Load bootstrap & styles
-require('style!css!bootstrap/dist/css/bootstrap.min.css');
-require('applicationStyles');
+//require('style!css!bootstrap/dist/css/bootstrap.min.css');
+//require('applicationStyles'); // for LESS
+require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
   <Router history={hashHistory}>

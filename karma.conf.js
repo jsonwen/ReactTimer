@@ -5,7 +5,12 @@ module.exports = function(config) {
     browsers: ['Chrome'],
     singleRun: true,
     frameworks: ['mocha'],
-    files: ['app/tests/**/*.test.jsx'],
+    files: [
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/tether/dist/js/tether.min.js',
+      'node_modules/bootstrap/dist/js/bootstrap.min.js',
+      'app/tests/**/*.test.jsx'
+    ],
     preprocessors: {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
     },
