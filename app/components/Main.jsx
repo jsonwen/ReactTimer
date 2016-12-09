@@ -7,7 +7,7 @@ var Main = (properties) => {
       <TopNavigation/>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-xs-6 offset-xs-3 col-md-6 offset-md-3 main">
+          <div className="col-xs-8 offset-xs-2 col-md-6 offset-md-3 main">
             {properties.children}
           </div>
         </div>
