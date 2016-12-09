@@ -8,7 +8,6 @@ var Main = (properties) => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-10 main">
-            <p className="page-title">Main.jsx rendered</p>
             {properties.children}
           </div>
         </div>
