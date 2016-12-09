@@ -15,7 +15,7 @@ var CountdownForm = React.createClass({
       <div>
         <form ref="form" onSubmit={this.onSubmit}>
           <input ref="seconds" type="text" placeholder="Enter time in seconds" className="form-control" />
-          <button className="btn btn-md btn-primary">Start</button>
+          <button className="btn btn-md btn-primary btn-full-width">Start</button>
         </form>
       </div>
     );
