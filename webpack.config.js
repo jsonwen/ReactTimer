@@ -25,11 +25,12 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
+      TopNavigation: 'app/components/TopNavigation.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
       applicationStyles: 'app/styles/app.less',
       Timer: 'app/components/Timer.jsx',
       Countdown: 'app/components/Countdown.jsx',
+      Clock: 'app/components/Clock.jsx',
     },
     extensions: ['', '.js', '.jsx']
   },

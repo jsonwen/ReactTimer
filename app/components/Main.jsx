@@ -1,10 +1,10 @@
 var React = require('react');
-var Nav = require('Nav');
+var TopNavigation = require('TopNavigation');
 
 var Main = (properties) => {
   return (
     <div>
-      <Nav/>
+      <TopNavigation/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-10 main">

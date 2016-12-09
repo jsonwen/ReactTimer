@@ -1,7 +1,7 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
-var Nav = React.createClass({
+var TopNavigation = React.createClass({
   render: function() {
     return (
       <nav className="navbar navbar-dark bg-inverse">
@@ -16,4 +16,4 @@ var Nav = React.createClass({
   }
 });
 
-module.exports = Nav;
+module.exports = TopNavigation;
